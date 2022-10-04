@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Software 2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!--CSS-->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!--Header -->
+    <header>
+        <div id="menu-bar" class="fas fa-bars"></div>
+        <a href="#" class="logo"><span>H</span>otel</a>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#book">Book</a>
+            <a href="#packages">Packages</a>
+            <a href="#galery">Galery</a>
+            <a href="#review">Review</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn"></i>
+        </div>
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="Buscar...">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+    </header>
+    <!--Login Formulario-->
+    <div class="login-form-container">
+        <i class="fas fa-times" id="form-close"></i>
+        <form action="">
+            <h3>Login</h3>
+            <input type="email" class="box" placeholder="Ingrese su correo">
+            <input type="password" class="box" placeholder="Ingrese su contraseña">
+            <input type="submit" value="login now" class="btn">
+            <input type="checkbox" id="remember">
+            <label for="remember">Remember me</label>
+            <p>Olvide mi contraseña <a href="#">Click Here</a></p>
+            <p>asddsa? <a href="#">Register now</a></p>
+        </form>
+    </div>
+    <!--Secciones-->
+    <section class="home" id="home">
+        <div class="content">
+            <h3>Hotel</h3>
+            <p>Manchester</p>
+            <a href="#" class="btn">Descubre Más</a>
+        </div>
+        <div class="controls">
+            <span class="vid-btn active" data-src="./videos/vid-1.mp4"></span>
+            <span class="vid-btn " data-src="./videos/vid-2.mp4"></span>
+            <span class="vid-btn " data-src="./videos/vid-3.mp4"></span>
+            <span class="vid-btn " data-src="./videos/vid-4.mp4"></span>
+            <span class="vid-btn " data-src="./videos/vid-5.mp4"></span> 
+        </div>
+        <div class="video-container">
+            <video src="./videos/vid-1.mp4" id="video-slider" loop autoplay muted></video>
+        </div>
+    </section>
+     <!--Lugares BOOK-->
+     <section class="book" id="book">
+        <h1 class="heading">
+            <span>b</span>
+            <span>o</span>
+            <span>o</span>
+            <span>k</span>
+            <span class="space"></span>
+            <span>n</span>
+            <span>o</span>
+            <span>w</span>
+        </h1>
+        <div class="row">
+            <div class="img">
+                <img src="./img/book.jpg" alt="">
+            </div>
+            <form action="">
+                <div class="inputBox">
+                    <h3>Where To.</h3>
+                    <input type="text" placeholder="place name">
+                </div>
+                <div class="inputBox">
+                    <h3>How Many.</h3>
+                    <input type="number" placeholder="place name">
+                </div>
+                <div class="inputBox">
+                    <h3>Arrivals.</h3>
+                    <input type="date">
+                </div>
+                <div class="inputBox">
+                    <h3>Leaving.</h3>
+                    <input type="date">
+                </div>
+                <input type="submit" class="btn" value="book now">
+            </form>
+        </div>
+     </section>
+    <!--Lugares BOOK final-->
+    <section class="packages" id="packages">
+        <h1 class="heading">
+            <span>p</span>
+            <span>a</span>
+            <span>c</span>
+            <span>k</span>
+            <span>a</span>
+            <span>g</span>
+            <span>e</span>
+            <span>s</span>
+        </h1>
+        <div class="box-container">
+            <!--Chichen-->
+            <div class="box">
+                <img src="./img/ChichenItza.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> Chichén Itzá - México</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repellat corrupti</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">$90.00 <span>$120.00</span></div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+            <!--Big Ben-->
+            <div class="box">
+                <img src="./img/big-ben-houses.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> London - UK</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repellat corrupti</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">$90.00 <span>$120.00</span></div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+            <!--cherry blossoms-->
+            <div class="box">
+                <img src="./img/cherry-blossoms.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> cherry blossoms - Japon</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repellat corrupti</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">$90.00 <span>$120.00</span></div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+            <!--Gran Cañon-->
+            <div class="box">
+                <img src="./img/great-wall.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> Chichén Itzá - México</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repellat corrupti</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">$90.00 <span>$120.00</span></div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+            <!--Big Ben-->
+            <div class="box">
+                <img src="./img/grand-canyon.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> London - UK</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repellat corrupti</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">$90.00 <span>$120.00</span></div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+            <!--cherry blossoms-->
+            <div class="box">
+                <img src="./img/las-vegas.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> cherry blossoms - Japon</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repellat corrupti</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">$90.00 <span>$120.00</span></div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+
+
+
+            <!--Gran Cañon-->
+            <div class="box">
+                <img src="./img/skycrapers-dubai.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> Chichén Itzá - México</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repellat corrupti</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">$90.00 <span>$120.00</span></div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+            <!--Big Ben-->
+            <div class="box">
+                <img src="./img/photo-canal-city.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> London - UK</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repellat corrupti</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">$90.00 <span>$120.00</span></div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+            <!--cherry blossoms-->
+            <div class="box">
+                <img src="./img/niagara-falls.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> cherry blossoms - Japon</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repellat corrupti</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">$90.00 <span>$120.00</span></div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+            <!--Gran Cañon-->
+          
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
